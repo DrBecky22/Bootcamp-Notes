@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>Web Developer Bootcamp Notes</h1>
+  <h3>3 reference websites used to find the "words" for HTML, CSS and JavaScript coding.</h3>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/">MDN Docs</a></li>
+    <ul>
+      <li>MDN Docs stands for something like Mozilla Developer Notation... the Firefox people</li>
+      <li>this is my least favorite, the visual interface is hard for my brain to parse</li>
+    </ul>
+    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+    <ul>
+      <li>comment or explanation about W3 school</li>
+      <li>this is my favorite format, but you have to click to different sections to look at elements and attributes, so sometimes less efficient</li>
+    </ul>
+    <li><a href="https://devdocs.io/">Dev Docs</a></li>
+    <ul>
+      <li>comment or explanation about Dev Docs</li>
+      <li>this is my 2nd favorite, the formatting is hard on my eyes, but I like the way they have things laidout. Attributes are listed with elements so you don't have to look elsewhere</li>
+    </ul>
+  </ul>
+  <br>
+  <hr size="3" noshade color="black">
+  <br>
+
+
+  <h1>Terminology: About the words used in writing code</h1>
+  <h3>HTML</h3>
+  <ul>
+    <li>Element</li>
+    <ul>
+      <li>A complete HTML command with several parts</li>
+      <ul>
+        <li>opening tag</li>
+        <li>closing tag</li>
+        <li>sometimes contents</li>
+        <li>and sometimes attributes</li>
+      </ul>
+    </ul>
+    <li>Tag
+      <ul>
+        <li>basic command structure, surrounded by brackets to indicate what the command is applied to</li>
+      </ul>
+    <li>Attribute</li>
+    <ul>
+      <li>secondary description for action / structure of tag</li>
+      <li>example: horizonal rule (line) tag has several possible attributes that can be used: alighnment, size, color, shade/ noshade, length</li>
+      <li>insert labeled pictures of these things</li>
+    </ul>
+    <li>Contents</li>
+    <ul>
+      <li>what you want to apply the tag structure to</li>
+    </ul>
+    <li>Closing and self closing</li>
+    <li>Note: heading and paragraph tags need a closing element. Other tags are self closing like line break (br), horizontal rule (hr), center and more</li>
+    <li>insert labeled pictures of these things</li>
+    <li>Comments can be left in the code, and they will not be rendered by the browser. Use "less than"bracket, exclamation point, dash, dash to open. Use dash, dash, "greater than" bracket to close</li>
+  </ul>
+  <!--these tags are self closing:
+<br> =line break,
+<hr> horizontal rule = horizontal divider line-->
+  <h3>CSS</h3>
+  <h3>JavaScript</h3>
+  <br>
+  <hr size="3" noshade color="black">
+  <br>
+
+
+  <h1>Platforms for practicing code writing</h1>
+  <ul>
+    <li><a href="https://codepen.io/your-work">Codepin</a></li>
+    <ul>
+      <li>an oniline platform</li>
+      <li>free account</li>
+      <li>shows what the rendered code looks like as you type</li>
+    </ul>
+    <li><a href="https://atom.io/">Atom</a></li>
+    <ul>
+      <li>this is the preferred Code Editor platform/application</li>
+      <li>desktop software, free to download</li>
+      <li>this is somewhat open source and users can tweak the user interface by changing the code for the Atom program itself - that is so meta that it hurts my brain</li>
+      <li>has thousands of free modular "packages" that improve the UI of Atom or provide shortcuts. For the course we installed</li>
+      <ul>
+        <li>emmet "the essential tool for web developers". it seems to have its own reference webpage: <a href="https://docs.emmet.io/cheat-sheet/">Emmet Cheat Sheet</a></li>
+        <ul>
+          <li>includes "boilerplate" code packets (or code templates for standard / common actions/ functions</li>
+          <li>example: at the beginning of every HTML site there needs to be a clip of code that says what language the site is supposed to be in and what unicode character set to pull from - because emmet is installed, you can just type "html" then
+            hit enter and it will autopopulate that boilerplate code.</li>
+          <li>check the emmet cheat sheet for other boilerplates and shortcuts</li>
+        </ul>
+        <li>atom-ternjs</li>
+        <li>autoclose-html-plus</li>
+        <li>ssslint</li>
+        <li>pigments</li>
+        <li>language-ejs</li>
+        <li>atom-beautify</li>
+      </ul>
+      <li>write and save code, upload to server when done?</li>
+      <li>other text editor options</li>
+      <ul>
+        <li>VSCode</li>
+        <li>Sublime</li>
+        <li>Brackets</li>
+        <li>plain text in notepad - if you are really desperate</li>
+      </ul>
+      <li>also works with GitHub</li>
+      <li>click here for <a href="https://github.com/nwinkler/atom-keyboard-shortcuts">Atom Keyboard Shortcuts</a></li>
+    </ul>
+    <li><a href="https://github.com/">GitHub</a></li>
+    <ul>
+      <li>still a little fuzzy on what this is</li>
+      <li>free online platform, set up account</li>
+      <li>I think this is a place we can upload code and test how it works on the internet</li>
+      <li>I think this is also used by classrooms to submit code/ projects to a teacher, or for groups to work on projects together</li>
+    </ul>
+  </ul>
+  <br>
+  <hr size="3" noshade color="black">
+  <br>
+
+
+  <h1>HTML Notes</h1>
+  <h3>Basic HTML Code Structure</h3>
+  <ul>
+    <li>head</li>
+    <ul>
+      <li>information for browser on how to manage the page</li>
+      <li>background info not displayed on the website</li>
+      <li>includes:</li>
+      <ul>
+        <li>declaration of document type as HTML</li>
+        <li>meta tags: information about the content for search engines.
+        <li>meta tags can have <strong>attributes</strong> such as:</li>
+        <ul>
+          <li>charset: declaration of unicode character set (always use UTF-8)</li>
+          <li>name: can have <strong>values</strong> of:</li>
+          <ul>
+            <li>application name</li>
+            <li>author: name of site author</li>
+            <li>description: describes content/ intent of site. These are the descriptive words that show up under the page title in search engine results</li>
+            <li>generator</li>
+            <li>keywords: list of keywords for search engine, reflects topics covered by content of site</li>
+            <li>viewport</li>
+          </ul>
+          <li>content: used as a descriptor with other attributes.</li>
+        </ul>
+        <li>title of page. not shown on page but explains what it is to the internet</li>
+        <img src="E:\Documents\Sync\Web Development\HTML-Personal Site\meta example.JPG" alt="Meta Tag examples" width="600" height="300">
+      </ul>
+    </ul>
+  </ul>
+  <li>body</li>
+  <ul>
+    <li>this section holds the code for everything that is displayed on the website</li>
+
+  <br>
+  <hr size="3" noshade color="black">
+  <br>
+
+
+  <h3>here is what a lot of the different tags look like in practice</h3>
+  <h1>This is a level 1 heading created using h1 tag</h1>
+  <h2>Level 2 heading</h2>
+  <h3>Level 3 heading</h3>
+  <h4>Level 4 heading</h4>
+  <h5>Level 5 heading</h5>
+  <h6>Level 6 heading</h6>
+
+
+  <br>
+  <hr size="3" noshade color="black">
+  <br>
+  <h1>What coded things look like</h1>
+  <h3>variations on horizontal rule</h3>
+  <hr size="4" noshade color="#9354d6" width="400px">
+  <p>the line "horizonal row" above is size 4, no shade, 400 pixels wide and has a hex color</p>
+  <center>
+    <p>these words have been centered using a center tag above and closing the centered text below</p>
+  </center>
+
+
+
+
+</body>
+
+</html>
